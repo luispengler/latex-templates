@@ -1,2 +1,2 @@
 # latex-templates
-Just a compilation of something "templates" I can use for certain tasks.
+Just a compilation of some "templates" I can use for certain tasks.

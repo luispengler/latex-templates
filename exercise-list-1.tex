@@ -1,64 +1,105 @@
 \documentclass{article}
 \author{Luís Spengler}
-\title{Exercise List}
+\title{Lista de Exercícios - Conversão Eletromecânica}
 \date{\today}
 
 \usepackage[utf8]{inputenc}
-\usepackage[portuguese]{babel} % For portuguese versions (change this to any other language, if english, remove this line)
-\usepackage[margin=1cm]{geometry}
+\usepackage[portuguese]{babel}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{titlesec}
-\usepackage{amsmath}
-\usepackage{physics}
 
 \graphicspath{{./docs/}}
 
 \titleformat{\section}
-  {\sffamily}{\thesection}{1em}{}
+  {\sffamily}{\thesection}{.25em}{- }
 \titleformat{\subsection}
-  {\sffamily}{\thesubsection}{1em}{}
+  {\sffamily}{\thesubsection}{.01em}{) }
 \renewcommand\thesubsection{\alph{subsection}}
 
 \begin{document}
 \maketitle
 \sffamily
 
-\section{Defina com suas palavras, o que é conversão eletromecânica da energia?} % This will be exercise n. 1
-\section{Em quais as formas a energia na forma elétrica pode ser convertida?} % This will be exercise n. 2
-\section{Explique com base na ilustração, quais fatores influenciam no valor da tensão induzida no condutor que corta o campo magnético.} % This will be exercise n. 3
+\section{Defina com suas palavras, o que é conversão eletromecânica da energia?}
+\textbf{R:} É simplesmente a tranformação de energia elétrica em energia mecânica e vice-versa. Tudo obedece o principio da conservação de energia. Um motor, não sendo 100\% eficiente, só significa que a energia se transformou em outro tipo de energia, ou que ela não foi transmitida de um jeito 100\% efetivo.
 
-% \includegraphics[width=\textwidth]{img1} % Some image you want to add
-\section{Quais são as duas principais partes construtivas de qualquer máquina rotativa?} % This will be exercise n. 4
-\section{Quais as formas mais comuns de se obter o campo magnético em uma máquina CC?} % This will be exercise n. 5
+\section{Em quais as formas a energia na forma elétrica pode ser convertida?}
+\textbf{R:} Em dezenas de maneiras diferentes, mas no nosso dia-a-dia utilizamos de apenas algumas delas. Destas temos as lâmpadas (energia elétrica para luminosa), os autofalantes (energia elétrica para sonora), aquecedores (energia elétrica para energia térmica), ventiladores (energia elétrica para energia mecânica), baterias (energia elétrica para energia potencial química).
 
-% Bellow you will add a group of two figures to be in the same row
-%	\begin{figure}[h!]
-%		\centering
-%		\begin{subfigure}[R]{0.3\textwidth}
-%			\centering
-%			\includegraphics[width=0.7\textwidth]{img2}
-%			\caption{Para questão 6}
-%		\end{subfigure}
-%		\hspace{2cm}
-%		\begin{subfigure}[R]{0.3\textwidth}
-%			\centering
-%			\includegraphics[width=0.7\textwidth]{img3}
-%			\caption{Para questão 7}
-%		\end{subfigure}
-%	\end{figure}
-\section{A figura mostra uma bobina com \(N=200\) espiras. A resistência é \(R=100\Omega\); \(Ag=8cm*12cm; g= 6mm,\) sendo aplicada uma tensão \(V=150V_{DC}\), determine:} % This will be exercise n. 6
-\subsection{Qual a intensidade inicial do campo no entreferro?} % This will be a subexercise.
-\subsection{A força exercida sobre a parte móvel nesta distância de entreferro} % This will be a subexercise.
-Após ligar a tensão elétrica, a parte móvel se movimentou, reduzindo o entreferro a \(2mm\). 
-\subsection{A intensidade do campo e a força depois de ligado o circuito.} % This will be a subexercise.
-\section{A figura mostra uma bobina com \(N=600\) espiras. A resistência é \(R=100\Omega\); \(Ag=10cm*10cm; g= 15mm,\) sendo aplicada uma tensão \(V=220V_{AC}, 60Hz\). Determine:} % This will be exercise n. 7
-\subsection{A indutância, a reatância indutiva e a impedância da bobina:} % This will be a subexercise.
-\subsection{Qual a intensidade inicial do campo no entreferro?} % This will be a subexercise.
-\subsection{Força exercida sobre a parte móvel nesta distância de entreferro.} % This will be a subexercise.
-\subsection{Após ligar a tensão elétrica, a parte móvel se movimentou, reduzindo o entreferro a \(3mm\).} % This will be a subexercise.
-\subsection{Intensidade do campo e a força depois de ligado o circuito.} % This will be a subexercise.
+\section{Explique com base na ilustração, quais fatores influenciam no valor da tensão induzida no condutor que corta o campo magnético.}
+\includegraphics[width=\textwidth]{img1}
+\textbf{R:} Velocidade, intensidade do campo magnético e o número de espiras. Quando alguma dessas variáveis é aumentada, a força eletromagnética induzida também aumenta.
+
+\section{Quais são as duas principais partes construtivas de qualquer máquina rotativa?}
+\textbf{R:} O rotor (parte móvel) e o estator (parte física).
+
+\section{Quais as formas mais comuns de se obter o campo magnético em uma máquina CC?}
+\textbf{R:} Usando um imã permanente ou um eletroimã.
+	\begin{figure}[h!]
+		\centering
+		\begin{subfigure}[R]{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{img2}
+			\caption{Para questão 6}
+		\end{subfigure}
+		\hspace{2cm}
+		\begin{subfigure}[R]{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{img3}
+			\caption{Para questão 7}
+		\end{subfigure}
+	\end{figure}
+
+\section{A figura mostra uma bobina com \(N=200\) espiras. A resistência é \(R=100\Omega\); \(Ag=8cm*12cm; g= 6mm,\) sendo aplicada uma tensão \(V=150V_{DC}\), determine:}
+
+\subsection{Qual a intensidade inicial do campo no entreferro?}
+\textbf{R:}
+\[I=\frac{V}{R} = \frac{150}{100} = 1,5A\]\
+\[B_{g}=\frac{\mu_{0}.N.I}{2g} = \frac{4\pi.10^{-7}.200.1,5}{2.0,006} = \frac{\pi}{100} = 0,031415T\]
+
+\subsection{A força exercida sobre a parte móvel nesta distância de entreferro}
+\textbf{R:}
+\[A_{g}=8cm*12cm = 96.10^{-4}m^2\]\
+\[F_{mag} = -\frac{B_{g}^{2}}{\mu_{0}}.A_{g} = -\frac{0,031415^2}{4\pi.10^{-7}}.96.10^{-4} = - 7,53N\]\\
+Após ligar a tensão elétrica, a parte móvel se movimentou, reduzindo o entreferro a \(2mm\).
+
+\subsection{A intensidade do campo e a força depois de ligado o circuito.}
+\textbf{R:}
+\[B_{g}=\frac{\mu_{0}.N.I}{2g} = \frac{4\pi.10^{-7}.200.1,5}{2.0,002} = 0,094247T\]\
+\[F_{mag} = -\frac{B_{g}^{2}}{\mu_{0}}.A_{g} = -\frac{0,094247^2}{4\pi.10^{-7}}.96.10^{-4} = -67,8572N \]
+
+\section{A figura mostra uma bobina com \(N=600\) espiras. A resistência é \(R=100\Omega\); \(Ag=10cm*10cm; g= 15mm,\) sendo aplicada uma tensão \(V=220V_{AC}, 60Hz\). Determine:}
+
+\subsection{A indutância, a reatância indutiva e a impedância da bobina:}
+\textbf{R:}
+\[A=10cm*10cm = 100^{-4}m^2\]\
+Indutância: \[L=\frac{\mu_{0}.N^2.A}{2.l_g} = \frac{4\pi.10^{-7}.600^2.100.10^{-4}}{2.0,015} = 0,1507 = 15,07mH\]\
+Reatância Indutiva: \[X_l=2\pi.f.L = 2\pi.60.15,07.10^{-3} = 5,68\Omega\]\
+Impedância: \[Z = R + jX_l = 100 + j5,68\Omega = 100,1611\Omega\] 
+
+\subsection{Qual a intensidade inicial do campo no entreferro?}
+\textbf{R:}
+\[I=\frac{V}{|Z|} = \frac{220}{100,1611} = 2,2A\]\
+\[B_{g}=\frac{\mu_{0}.N.I}{2g} = \frac{4\pi.10^{-7}.600.2,2}{2.0,015} = 0,055T\]
+
+\subsection{Força exercida sobre a parte móvel nesta distância de entreferro.}
+\textbf{R:}
+\[F_{mag} = -\frac{B_{g}^{2}}{\mu_{0}}.A = -\frac{0,055^2}{4\pi.10^{-7}}.100.10^{-4} = - 24,32N\]\\
+Após ligar a tensão elétrica, a parte móvel se movimentou, reduzindo o entreferro a \(3mm\).
+\subsection{Intensidade do campo e a força depois de ligado o circuito.}
+\textbf{R:}
+\[A=10cm*10cm = 100^{-4}m^2\]\
+\[L=\frac{\mu_{0}.N^2.A}{2.l_g} = \frac{4\pi.10^{-7}.600^2.100.10^{-4}}{2.0,003} = 0,75398H\]\
+\[X_l=2\pi.f.L = 2\pi.60.0,75398 = 284,244\Omega\]\
+\[Z = R + jX_l = 100 + j284,244\Omega = 301,3215\Omega\]\
+\[I=\frac{V}{|Z|} = \frac{220}{301,3215} = 0,7301A\]\
+\[B_{g}=\frac{\mu_{0}.N.I}{2g} = \frac{4\pi.10^{-7}.600.0,7301}{2.0,003} = 0,09174T\]\
+\[F_{mag} = -\frac{B_{g}^{2}}{\mu_{0}}.A_{g} = -\frac{0,09174^2}{4\pi.10^{-7}}.100.10^{-4} = -66,97N \]
 
 \end{document}
